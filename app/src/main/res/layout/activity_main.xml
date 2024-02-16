@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/linear_gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="60dp"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardCornerRadius="500dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/avatar"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusTopStart="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTextPalindrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:ellipsize="none"
+            android:hint="@string/palindrome"
+            android:shadowRadius="50" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="39dp" />
+
+    <com.kusu.loadingbutton.LoadingButton
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Check"
+        android:textColor="@color/white"
+        app:lb_isShadowEnable="false"
+        app:lb_isCircular="false"
+        app:lb_shadowHeight="0dp" />
+</LinearLayout>
